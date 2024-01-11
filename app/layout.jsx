@@ -12,10 +12,12 @@ function RootLayout({ children }) {
       <body>
         <div className="main">
           <div className="gradient" />
-          <Navbar />
         </div>
 
-        <main className="app">{children}</main>
+        <main className="app">
+          <Navbar />
+          {children}
+        </main>
       </body>
     </html>
   );
