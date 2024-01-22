@@ -1,5 +1,5 @@
 import Navbar from "@/components/Navbar";
-import Provider from "@/components/Provider";
+import AuthProvider from "@/components/Provider";
 import "@/styles/global.css";
 
 export const metadata = {
@@ -11,7 +11,7 @@ function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Provider>
+        <AuthProvider>
           <div className="main">
             <div className="gradient" />
           </div>
@@ -20,7 +20,7 @@ function RootLayout({ children }) {
             <Navbar />
             {children}
           </main>
-        </Provider>
+        </AuthProvider>
       </body>
     </html>
   );
