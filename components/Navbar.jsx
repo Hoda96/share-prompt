@@ -69,7 +69,7 @@ function Navbar() {
       </div>
       {/* Mobile Navigation */}
       <div className="sm:hidden flex relative">
-        {session?.user ? (
+        {session ? (
           <div className="flex">
             <Image
               src={"/assets/images/mobile-menu.png"}
@@ -90,7 +90,7 @@ function Navbar() {
                 </Link>
 
                 <Link
-                  href={"/profile"}
+                  href={"/create-promp"}
                   className="dropdown_item"
                   onClick={() => setToggleMenu(false)}
                 >
