@@ -1,4 +1,4 @@
-const { Schema, models } = require("mongoose");
+const { Schema, model, models } = require("mongoose");
 
 const PromptSchema = new Schema({
   creator: {
@@ -15,4 +15,4 @@ const PromptSchema = new Schema({
   },
 });
 
-export const prompt = models.prompt || model("Prompt", PromptSchema);
+export const Prompt = models.prompt || model("Prompt", PromptSchema);
