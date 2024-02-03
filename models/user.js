@@ -1,5 +1,4 @@
 import { Schema, model, models } from "mongoose";
-import { stringify } from "postcss";
 
 const UserSchema = new Schema({
   email: {
@@ -20,4 +19,4 @@ const UserSchema = new Schema({
   },
 });
 
-export const User = models.user || model("user", UserSchema);
+export const User = models.user || model("User", UserSchema);

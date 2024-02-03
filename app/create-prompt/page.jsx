@@ -18,7 +18,7 @@ function CreatePrompt() {
         body: JSON.stringify({
           prompt: post.prompt,
           tag: post.tag,
-          id: session?.user.id,
+          userId: session?.user.id,
         }),
       });
       if (response.ok) {
