@@ -45,7 +45,11 @@ function Form({ type, post, setPost, submitting, handleSubmit }) {
           <Link href={"/"} className="text-gray-500 text-sm">
             Cancel
           </Link>
-          <button type="submit" disabled={submitting}>
+          <button
+            type="submit"
+            disabled={submitting}
+            className="px-5 py-1.5 bg-primary-orange text-sm text-white rounded-full"
+          >
             {submitting ? `${type}...` : `${type}`}
           </button>
         </div>
